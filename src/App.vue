@@ -1,30 +1,32 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <header-com></header-com>
   <router-view/>
+  <FooterCom/>
 </template>
-
+<script setup>
+  import HeaderCom from '@/components/HeaderCom.vue';
+  import FooterCom from '@/components/FooterCom.vue';
+</script>
 <style>
+@import url(./assets/css/public.css);
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: relative;
 }
-
-nav {
-  padding: 30px;
+body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4 {
+margin: 0;
+padding: 0;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+ul,ol,li{
+    list-style: none;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+a {
+    text-decoration: none;
+    cursor:pointer;
+    color: #000000;
 }
 </style>

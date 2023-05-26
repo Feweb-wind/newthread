@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'YouSheBiaoTiHei';
+    src: url(../font/YouSheBiaoTiHei-2.ttf);
+}
+
+.main {
+    background: linear-gradient(126deg, #61B484 0%, #61B484 17%, #7EC884 31%, #A6D699 39%, #D6EEBD 53%, #FFFFFF 100%);
+}
+
+img {
+    display: block;
+}
+
+.part-title {
+    font-size: 45px;
+    font-family: YouSheBiaoTiHei-Regular, YouSheBiaoTiHei;
+    font-weight: 400;
+    color: #343434;
+}
+
+.part-title-right {
+    font-size: 50px;
+    font-family: YouSheBiaoTiHei-Regular, YouSheBiaoTiHei;
+    font-weight: 400;
+    color: #53466E;
+}
